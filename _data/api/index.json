@@ -1,0 +1,17 @@
+{
+  "resources": [
+    {
+      "name": "Circuitos",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Agrega una carga a un circuito",
+          "link": "circuitos/agrega_una_carga_a_un_circuito.json",
+          "groups": "all",
+          "route": "/api/v1/electrico/circuitos/addToCircuito.json",
+          "method": "post"
+        }
+      ]
+    }
+  ]
+}

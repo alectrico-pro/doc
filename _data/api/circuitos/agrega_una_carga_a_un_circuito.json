@@ -1,0 +1,54 @@
+{
+  "resource": "Circuitos",
+  "resource_explanation": null,
+  "http_method": "POST",
+  "route": "/api/v1/electrico/circuitos/addToCircuito.json",
+  "description": "Agrega una carga a un circuito",
+  "explanation": "Busca el circuito y le agrega la carga seleccionada por el Usuario",
+  "parameters": [
+    {
+      "name": "auth_token",
+      "description": "Token de autorización"
+    },
+    {
+      "name": "__amp_source_origin",
+      "description": "Origen de Amp Publisher"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "POST",
+      "request_path": "/api/v1/electrico/circuitos/addToCircuito.json",
+      "request_body": "auth_token=eyJhbGciOiJIUzI1NiJ9.eyJyZWFkZXIiOnsiaWQiOjEsInJpZCI6ImFtcHJpZCIsInVzZXJfaWQiOjEsInVzZXIiOnsiaWQiOjEsIm5hbWUiOiJCYWlsIE9yZ2FuYSIsImVtYWlsIjoiamFtZXNAd2lsa2luc29uLm5ldCIsInBhc3N3b3JkX2RpZ2VzdCI6IjFhQiVFRkdIIiwiY3JlYXRlZF9hdCI6IjIwMTktMTItMDQgMDE6MDU6MTIgLTAzMDAiLCJ1cGRhdGVkX2F0IjoiMjAxOS0xMi0wNCAwMTowNToxMiAtMDMwMCIsImZvbm8iOiIoODYzKSAwODItNjg1MyB4NzY1MDYifX0sImV4cCI6MTU3NTUxODcxMn0.ZJVbTWv_HuNPw5xqUDDIk-M6fgDtAqSZvifE1BtSCWs&__amp_source_origin=http%3A%2F%2F192.168.137.190",
+      "request_headers": {
+        "Origin": "http://192.168.137.190",
+        "Host": "example.org",
+        "Content-Type": "application/x-www-form-urlencoded",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+      },
+      "request_content_type": "application/x-www-form-urlencoded",
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "{\n  \"cargas_count\": 1,\n  \"time_stamp\": \"2019-12-04T01:05:13.497-03:00\",\n  \"items\": [\n    {\n      \"img\": \"/img/led.png\",\n      \"cantidad\": 1,\n      \"delete_link\": \"http://example.org/api/v1/electrico/circuitos/%23%3Cstruct%20Carga%20tipo_equipo=%23%3Cstruct%20TipoEquipo%20nombre=%22Foco%20Embutido%20LED%2020W%22%3E%3E/dropFromCircuito\",\n      \"id\": 844,\n      \"nombre\": \"Foco Embutido LED 20W\",\n      \"potencia\": 10,\n      \"circuito\": \"I\",\n      \"equipo\": 844\n    }\n  ]\n}",
+      "response_headers": {
+        "AMP-Access-Control-Allow-Source-Origin": "http://192.168.137.190",
+        "Access-Control-Allow-Origin": "http://192.168.137.190",
+        "Access-Control-Expose-Headers": "AMP-Access-Control-Allow-Source-Origin",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"5185f965d5108c6bd6d9131fe8de2316\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "7cb2ea92-495f-45de-8238-7535fa3cdd5d",
+        "X-Runtime": "0.144485",
+        "Vary": "Origin",
+        "Content-Length": "382"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}
