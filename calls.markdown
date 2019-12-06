@@ -20,7 +20,9 @@ permalink: /calls/
 <tr><small><td>
 {{ atributo.first }}
 <hr>
-{{ atributo.last | replace: "_", "-" }}
+{% assign linea = atributo.last | replace: "_", "_&#173;" %}
+{{ linea | replace: "/", "/&#173;" }}
+
 </td></small></tr>
 {% endfor %}
 {% endfor %}
