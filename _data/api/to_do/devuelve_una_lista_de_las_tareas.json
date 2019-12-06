@@ -1,0 +1,54 @@
+{
+  "resource": "To Do",
+  "resource_explanation": null,
+  "http_method": "GET",
+  "route": "/todos",
+  "description": "Devuelve una lista de las tareas",
+  "explanation": "Lista de tareas por hacer, To Do",
+  "parameters": [
+    {
+      "name": "auth_token",
+      "description": "Token de autorización"
+    },
+    {
+      "name": "__amp_source_origin",
+      "description": "Origen de Amp Publisher"
+    }
+  ],
+  "response_fields": [
+
+  ],
+  "requests": [
+    {
+      "request_method": "GET",
+      "request_path": "/todos?auth_token=eyJhbGciOiJIUzI1NiJ9.eyJyZWFkZXIiOnsiaWQiOjEsInJpZCI6ImFtcHJpZCIsInVzZXJfaWQiOjEsInVzZXIiOnsiaWQiOjEsIm5hbWUiOiJMYW5kbyBDYWxyaXNzaWFuIiwiZW1haWwiOiJvZGlzLmxhcmtpbkBndXNpa293c2tpLmNvbSIsInBhc3N3b3JkX2RpZ2VzdCI6IjFhQiVFRkdIIiwiY3JlYXRlZF9hdCI6IjIwMTktMTItMDUgMTY6NDY6MzUgLTAzMDAiLCJ1cGRhdGVkX2F0IjoiMjAxOS0xMi0wNSAxNjo0NjozNSAtMDMwMCIsImZvbm8iOiIyMjguNjQ0LjY4NzYifX0sImV4cCI6MTU3NTY2MTU5NX0.tA2RphqQgOTo7gj-DbHuDQlF09l9edGlPRxi6liyBtw&__amp_source_origin=http%3A%2F%2F192.168.137.190",
+      "request_body": null,
+      "request_headers": {
+        "Origin": "http://192.168.137.190",
+        "Host": "example.org",
+        "Cookie": ""
+      },
+      "request_query_parameters": {
+        "auth_token": "eyJhbGciOiJIUzI1NiJ9.eyJyZWFkZXIiOnsiaWQiOjEsInJpZCI6ImFtcHJpZCIsInVzZXJfaWQiOjEsInVzZXIiOnsiaWQiOjEsIm5hbWUiOiJMYW5kbyBDYWxyaXNzaWFuIiwiZW1haWwiOiJvZGlzLmxhcmtpbkBndXNpa293c2tpLmNvbSIsInBhc3N3b3JkX2RpZ2VzdCI6IjFhQiVFRkdIIiwiY3JlYXRlZF9hdCI6IjIwMTktMTItMDUgMTY6NDY6MzUgLTAzMDAiLCJ1cGRhdGVkX2F0IjoiMjAxOS0xMi0wNSAxNjo0NjozNSAtMDMwMCIsImZvbm8iOiIyMjguNjQ0LjY4NzYifX0sImV4cCI6MTU3NTY2MTU5NX0.tA2RphqQgOTo7gj-DbHuDQlF09l9edGlPRxi6liyBtw",
+        "__amp_source_origin": "http://192.168.137.190"
+      },
+      "request_content_type": null,
+      "response_status": 200,
+      "response_status_text": "OK",
+      "response_body": "[\n  {\n    \"id\": 1,\n    \"title\": \"ullam\",\n    \"created_by\": \"2840675865\",\n    \"created_at\": \"2019-12-05T16:46:35.349-03:00\",\n    \"updated_at\": \"2019-12-05T16:46:35.349-03:00\"\n  },\n  {\n    \"id\": 2,\n    \"title\": \"ad\",\n    \"created_by\": \"7926318917\",\n    \"created_at\": \"2019-12-05T16:46:35.354-03:00\",\n    \"updated_at\": \"2019-12-05T16:46:35.354-03:00\"\n  },\n  {\n    \"id\": 3,\n    \"title\": \"impedit\",\n    \"created_by\": \"8273002862\",\n    \"created_at\": \"2019-12-05T16:46:35.360-03:00\",\n    \"updated_at\": \"2019-12-05T16:46:35.360-03:00\"\n  },\n  {\n    \"id\": 4,\n    \"title\": \"rem\",\n    \"created_by\": \"1967534241\",\n    \"created_at\": \"2019-12-05T16:46:35.364-03:00\",\n    \"updated_at\": \"2019-12-05T16:46:35.364-03:00\"\n  },\n  {\n    \"id\": 5,\n    \"title\": \"exercitationem\",\n    \"created_by\": \"2500385380\",\n    \"created_at\": \"2019-12-05T16:46:35.367-03:00\",\n    \"updated_at\": \"2019-12-05T16:46:35.367-03:00\"\n  },\n  {\n    \"id\": 6,\n    \"title\": \"itaque\",\n    \"created_by\": \"1708786457\",\n    \"created_at\": \"2019-12-05T16:46:35.371-03:00\",\n    \"updated_at\": \"2019-12-05T16:46:35.371-03:00\"\n  },\n  {\n    \"id\": 7,\n    \"title\": \"blanditiis\",\n    \"created_by\": \"3403898954\",\n    \"created_at\": \"2019-12-05T16:46:35.377-03:00\",\n    \"updated_at\": \"2019-12-05T16:46:35.377-03:00\"\n  },\n  {\n    \"id\": 8,\n    \"title\": \"enim\",\n    \"created_by\": \"2019953075\",\n    \"created_at\": \"2019-12-05T16:46:35.381-03:00\",\n    \"updated_at\": \"2019-12-05T16:46:35.381-03:00\"\n  },\n  {\n    \"id\": 9,\n    \"title\": \"dolor\",\n    \"created_by\": \"5055779249\",\n    \"created_at\": \"2019-12-05T16:46:35.384-03:00\",\n    \"updated_at\": \"2019-12-05T16:46:35.384-03:00\"\n  },\n  {\n    \"id\": 10,\n    \"title\": \"dolores\",\n    \"created_by\": \"4349565701\",\n    \"created_at\": \"2019-12-05T16:46:35.388-03:00\",\n    \"updated_at\": \"2019-12-05T16:46:35.388-03:00\"\n  }\n]",
+      "response_headers": {
+        "AMP-Access-Control-Allow-Source-Origin": "http://192.168.137.190",
+        "Access-Control-Allow-Origin": "http://192.168.137.190",
+        "Access-Control-Expose-Headers": "AMP-Access-Control-Allow-Source-Origin",
+        "Content-Type": "application/json; charset=utf-8",
+        "ETag": "W/\"c9fcd3249fdcd2af3461c01493a45b1c\"",
+        "Cache-Control": "max-age=0, private, must-revalidate",
+        "X-Request-Id": "6143df5d-cdcc-4f2e-9bfd-82bf0e3e1425",
+        "X-Runtime": "0.101210",
+        "Content-Length": "1425"
+      },
+      "response_content_type": "application/json; charset=utf-8",
+      "curl": null
+    }
+  ]
+}

@@ -5,21 +5,50 @@ layout: post
 title: Api Calls
 permalink: /calls/
 ---
-{{ site.data.api.circuitos.first.first }}
+{% for caso in site.data.api.first %}
+{% for resource in caso %}
+{% for elemento in resource %}
+{% for atributo in elemento  %}
+{% if (atributo != 'index' and atributo != 'resources' ) %}
+<table>
+<thead><th>Atributo</th><th>Valor </th></thead>
+<tbody>
+{% endif %}
+{{ atributo.name }}
+{% for example in atributo.examples %}
+{% for atributo in example %}
+<tr>{% for parte in atributo %}<td>{{ parte }}</td>{% endfor %}</tr>
+{% endfor %}
+{% endfor %}
+{% if (atributo != 'index' and atributo != 'resources' ) %}
+</tbody>
+</table>
+{% endif %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
+{% endfor %}
+<hr>
+<hr>
 
-{% for resource in site.data.api.circuitos %}
-
+---------------------------------------------------------------
+---------------------------------------------------------------
+{% for resource in site.data.api %}
+{% if (resource.first != 'index') %}
+  <h1> Recurso {{ resource.first }} </h1>
+  {% for e in resource.last %}
+  <h1> {{ e.first }} </h1>
   Parámetros:
   <ol>
-  {% for parametro in resource.last.parameters %}
-    <li>{{ parametro.name  }} ( {{ parametro.description }} ) </li>
+  {% for parametro in e.last.parameters %}
+  <li>{{ parametro.name  }} ( {{ parametro.description }} ) </li>
   {% endfor %}
   </ol>
-
   Ejemplo:
   <ol>
-  {% for request in resource.last.requests %}
+  {% for request in e.last.requests %}
     request   
+    <br>
     {{ request.request_method }} ( {{ request.request_path }} ) 
     <br>
     <br>
@@ -62,6 +91,7 @@ permalink: /calls/
     <br>
     {{ request.response_headers }}
     <ul>
+    En forma de lista:
     {% for header in request.response_headers %}
      <li>
       {{ header }}
@@ -78,18 +108,31 @@ permalink: /calls/
     {{ request.curl }}
   {% endfor %}
   </ol>
-
+  {% endfor %}
+{% endif %}
 {% endfor %}
 
 <hr>
 Indice de Llamadas Api
 
-{% for example in site.data.api.index.resources.first.examples %}
+{% for resource in site.data.api.index.resources %}
+{% for example in resource.examples %}
  <ul>
    <li> {{ example.description }} </li>
    {{ example.method }}
    {{ example.route }}
  </ul>
 {% endfor %}
+{% endfor %}
+
+<hr><hr><hr>
+
+
+{% for resource in site.data.api %}
+{% if (resource.first != 'index' ) %} 
+{{ resource.first}}
+{% endif %}
+{% endfor %}
+
 
 

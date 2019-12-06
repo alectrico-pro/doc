@@ -12,6 +12,19 @@
           "method": "post"
         }
       ]
+    },
+    {
+      "name": "To Do",
+      "explanation": null,
+      "examples": [
+        {
+          "description": "Devuelve una lista de las tareas",
+          "link": "to_do/devuelve_una_lista_de_las_tareas.json",
+          "groups": "all",
+          "route": "/todos",
+          "method": "get"
+        }
+      ]
     }
   ]
 }

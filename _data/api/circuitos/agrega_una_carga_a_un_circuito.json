@@ -22,7 +22,7 @@
     {
       "request_method": "POST",
       "request_path": "/api/v1/electrico/circuitos/addToCircuito.json",
-      "request_body": "auth_token=eyJhbGciOiJIUzI1NiJ9.eyJyZWFkZXIiOnsiaWQiOjEsInJpZCI6ImFtcHJpZCIsInVzZXJfaWQiOjEsInVzZXIiOnsiaWQiOjEsIm5hbWUiOiJLeWxvIFJlbiIsImVtYWlsIjoiZGFtaWFuQHRoaWVsLmlvIiwicGFzc3dvcmRfZGlnZXN0IjoiMWFCJUVGR0giLCJjcmVhdGVkX2F0IjoiMjAxOS0xMi0wNSAxMToxODo0MiAtMDMwMCIsInVwZGF0ZWRfYXQiOiIyMDE5LTEyLTA1IDExOjE4OjQyIC0wMzAwIiwiZm9ubyI6Ijg0OC05NTUtMzU0MCB4OTIyIn19LCJleHAiOjE1NzU2NDE5MjJ9.o_W52RxVfZtH9_tQx-eemsyaq7qhkXaeZu_-xZZLqMc&__amp_source_origin=http%3A%2F%2F192.168.137.190",
+      "request_body": "auth_token=eyJhbGciOiJIUzI1NiJ9.eyJyZWFkZXIiOnsiaWQiOjEsInJpZCI6ImFtcHJpZCIsInVzZXJfaWQiOjEsInVzZXIiOnsiaWQiOjEsIm5hbWUiOiJIZXJhIFN5bmR1bGxhIiwiZW1haWwiOiJlbmVpZGEuZGliYmVydEBkYXZpc3BhY29jaGEub3JnIiwicGFzc3dvcmRfZGlnZXN0IjoiMWFCJUVGR0giLCJjcmVhdGVkX2F0IjoiMjAxOS0xMi0wNSAxNjo0NjozNSAtMDMwMCIsInVwZGF0ZWRfYXQiOiIyMDE5LTEyLTA1IDE2OjQ2OjM1IC0wMzAwIiwiZm9ubyI6Ijk5MC4zOTYuMjMxMSB4NjU5NTEifX0sImV4cCI6MTU3NTY2MTU5NX0.Lxn-EPHuIRmBsIfGgYlMu9At86PtdWybe3667gIUPmM&__amp_source_origin=http%3A%2F%2F192.168.137.190",
       "request_headers": {
         "Origin": "http://192.168.137.190",
         "Host": "example.org",
@@ -34,16 +34,16 @@
       "request_content_type": "application/x-www-form-urlencoded",
       "response_status": 200,
       "response_status_text": "OK",
-      "response_body": "{\n  \"cargas_count\": 1,\n  \"time_stamp\": \"2019-12-05T11:18:44.186-03:00\",\n  \"items\": [\n    {\n      \"img\": \"/img/led.png\",\n      \"cantidad\": 1,\n      \"delete_link\": \"http://example.org/api/v1/electrico/circuitos/%23%3Cstruct%20Carga%20tipo_equipo=%23%3Cstruct%20TipoEquipo%20nombre=%22Foco%20Embutido%20LED%2020W%22%3E%3E/dropFromCircuito\",\n      \"id\": 844,\n      \"nombre\": \"Foco Embutido LED 20W\",\n      \"potencia\": 10,\n      \"circuito\": \"I\",\n      \"equipo\": 844\n    }\n  ]\n}",
+      "response_body": "{\n  \"cargas_count\": 1,\n  \"time_stamp\": \"2019-12-05T16:46:36.777-03:00\",\n  \"items\": [\n    {\n      \"img\": \"/img/led.png\",\n      \"cantidad\": 1,\n      \"delete_link\": \"http://example.org/api/v1/electrico/circuitos/%23%3Cstruct%20Carga%20tipo_equipo=%23%3Cstruct%20TipoEquipo%20nombre=%22Foco%20Embutido%20LED%2020W%22%3E%3E/dropFromCircuito\",\n      \"id\": 844,\n      \"nombre\": \"Foco Embutido LED 20W\",\n      \"potencia\": 10,\n      \"circuito\": \"I\",\n      \"equipo\": 844\n    }\n  ]\n}",
       "response_headers": {
         "AMP-Access-Control-Allow-Source-Origin": "http://192.168.137.190",
         "Access-Control-Allow-Origin": "http://192.168.137.190",
         "Access-Control-Expose-Headers": "AMP-Access-Control-Allow-Source-Origin",
         "Content-Type": "application/json; charset=utf-8",
-        "ETag": "W/\"e02dfdc3562d2ce09247c697fca1a29a\"",
+        "ETag": "W/\"d4d5b895c817fc6103c819baec243b8a\"",
         "Cache-Control": "max-age=0, private, must-revalidate",
-        "X-Request-Id": "c342d3b9-ec13-407c-a3a0-cf6d1ec997d6",
-        "X-Runtime": "0.225025",
+        "X-Request-Id": "76236e8f-08ba-46c8-a708-192972cce56f",
+        "X-Runtime": "0.203324",
         "Vary": "Origin",
         "Content-Length": "382"
       },
