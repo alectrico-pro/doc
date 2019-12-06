@@ -11,13 +11,17 @@ permalink: /calls/
 {% for atributo in elemento  %}
 {% if (atributo != 'index' and atributo != 'resources' ) %}
 <table>
-<thead><th>Atributo</th><th>Valor </th></thead>
+<thead><th>Atributo</th></thead>
 <tbody>
 {% endif %}
 {{ atributo.name }}
 {% for example in atributo.examples %}
 {% for atributo in example %}
-<tr>{% for parte in atributo %}<td>{{ parte }}</td>{% endfor %}</tr>
+<tr><small><td>
+{{ atributo.first }}
+<hr>
+{{ atributo.last | replace: "_", "-" }}
+</td></small></tr>
 {% endfor %}
 {% endfor %}
 {% if (atributo != 'index' and atributo != 'resources' ) %}
