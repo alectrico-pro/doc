@@ -27,7 +27,7 @@ url: https://doc.alectrico.cl/ # the base hostname & protocol for your site, e.g
 github_username:  alectrico-pro
 
 # Build settings
-theme: minima
+theme: jekyll-theme-time-machine
 plugins:
   - jekyll-feed
 
